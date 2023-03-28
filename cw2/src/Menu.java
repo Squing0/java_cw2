@@ -12,7 +12,6 @@ public class Menu {
             System.out.println("4. Fish");
             System.out.println("5. Dog");
             System.out.println("6. Parrot");
-            System.out.println("0. Quit");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -61,7 +60,6 @@ public class Menu {
                 System.out.println("3. Communicate");
                 System.out.println("4. Play");
                 System.out.println("5. Display stats");
-                System.out.println("6. Quit game");
                 System.out.println("0. Back to animal selection");
 
                 choice = scanner.nextInt();
@@ -87,9 +85,6 @@ public class Menu {
                     case 5:
                         animal.displayStats();
                         break;
-                    case 6:
-                    	System.exit(0);
-                    	break;
                     default:
                         System.out.println("Invalid choice, please try again.");
                         continue;
@@ -97,7 +92,14 @@ public class Menu {
 
                 if (animal.getHunger() >= 100) {
                     System.out.println(animal.getName() + " has starved to death!");
-                    break;
+                    System.out.println("Do you want to continue?\n If so then please enter either 1 or 2");
+                    int decision = scanner.nextInt();
+                    if(decision == 1) {
+                    	break;
+                    }
+                    else if (decision == 2){ // Made it so that user have the option for whether they want to continue or not.
+                    	System.exit(0);
+                    }
                 } else if (animal.getHunger() >= 80) {
                     System.out.println(animal.getName() + " is very hungry.");
                 } else if (animal.getHunger() >= 50) {

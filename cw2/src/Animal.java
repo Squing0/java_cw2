@@ -16,9 +16,9 @@ public abstract class Animal {
         this.energy = energy;
     }
     
-    public Animal(String name) {
-        this.name = name;
-        this.species = "";
+    public Animal(String s) {
+        this.name = "";
+        this.species = s;
         this.food = "";
         this.hunger = 50;
         this.happiness = 50;
