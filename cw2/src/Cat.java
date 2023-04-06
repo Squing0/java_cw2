@@ -1,7 +1,6 @@
 public class Cat extends Animal {
     public Cat() {
-        super("Cat");
-        setFood("Cat food");
+        super("Cat", "Meat");
     }
 
     @Override

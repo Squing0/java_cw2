@@ -1,7 +1,7 @@
 public class Bunny extends Animal {
     public Bunny() {
-        super("Bunny");
-        setFood("Carrots");
+        super("Bunny", "Carrots");
+//        setFood("Carrots");
     }
 
     @Override

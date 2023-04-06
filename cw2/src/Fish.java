@@ -1,7 +1,6 @@
 public class Fish extends Animal {
     public Fish() {
-        super("Fish");
-        setFood("flakes");
+        super("Fish", "Flakes");
     }
     
     public void communicate() {

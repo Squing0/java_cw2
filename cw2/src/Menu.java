@@ -13,6 +13,8 @@ public class Menu {
             System.out.println("5. Dog");
             System.out.println("6. Parrot");
 
+            System.out.print("Animal: ");
+
             int choice = scanner.nextInt();
             scanner.nextLine();
 
@@ -46,7 +48,7 @@ public class Menu {
                     continue;
             }
 
-            System.out.println("Enter a name for your " + animal.getSpecies() + ":");
+            System.out.print("Enter a name for your " + animal.getSpecies() + ": ");
             String name = scanner.nextLine();
             animal.setName(name);
 

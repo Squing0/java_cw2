@@ -7,19 +7,19 @@ public abstract class Animal {
     private int energy;
     private Start_up start_up;
     
-    public Animal(String name, String species, String food, int hunger, int happiness, int energy) {
-        this.name = name;
-        this.species = species;
-        this.food = food;
-        this.hunger = hunger;
-        this.happiness = happiness;
-        this.energy = energy;
-    }
+//    public Animal(String name, String species, String food, int hunger, int happiness, int energy) {
+//        this.name = name;
+//        this.species = species;
+//        this.food = food;
+//        this.hunger = hunger;
+//        this.happiness = happiness;
+//        this.energy = energy;
+//    }
     
-    public Animal(String s) {
+    public Animal(String s, String f) {
         this.name = "";
         this.species = s;
-        this.food = "";
+        this.food = f;
         this.hunger = 50;
         this.happiness = 50;
         this.energy = 50;
@@ -69,9 +69,9 @@ public abstract class Animal {
         return food;
     }
 
-    public void setFood(String food) {
-        this.food = food;
-    }
+   public void setFood(String food) {
+      this.food = food;
+   }
 
     public int getHunger() {
         return hunger;

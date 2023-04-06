@@ -1,7 +1,6 @@
 public class Hamster extends Animal {
     public Hamster() {
-        super("Hamster");
-        setFood("Seeds");
+        super("Hamster", "Seeds");
     }
 
     @Override

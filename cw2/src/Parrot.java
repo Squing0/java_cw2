@@ -1,7 +1,6 @@
 public class Parrot extends Animal {
     public Parrot() {
-        super("Parrot");
-        setFood("seeds");
+        super("Parrot", "Seeds");
     }
     
     public void communicate() {
